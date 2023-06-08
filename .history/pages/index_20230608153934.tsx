@@ -36,7 +36,7 @@ const Home: NextPage = ({
       <section>
         <div className="mt-3 text-center">
           <Link href="/">
-            <h1 className="text-[3rem] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-pink-500 ">
+            <h1 className="hover:transition-all text-[3rem] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-pink-500 ">
               {' '}
               Welcome to DevBlog{' '}
             </h1>
@@ -53,8 +53,8 @@ const Home: NextPage = ({
               <button
                 className={`${
                   selectedIdx.includes(idx)
-                    ? 'label-selected'
-                    : 'label'
+                    ? 'label-selected hover:bg-sky-400 transition-all duration-300'
+                    : 'label hover:bg-sky-400 transition-all duration-300'
                 }`}
                 key={idx}
                 onClick={(e) => filterLabel(e.target, idx)}
@@ -68,7 +68,7 @@ const Home: NextPage = ({
           return (
             <div
               key={blog.id}
-              className="w-[30em] max-h-[30em] overflow-hidden mx-6 mb-6 bg-black-gradient hover:bg-blue-gradient hover:text-black rounded-lg p-4 transition-all duration-300 box-shadow "
+              className="w-[28em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-300 transition-all duration-300"
             >
               <a href={blog.url} target="_blank" rel="noreferrer">
                 <BlogReview

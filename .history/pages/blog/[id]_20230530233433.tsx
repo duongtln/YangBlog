@@ -12,13 +12,13 @@ const BlogPost: NextPage = ({
     <main className="layout">
       <title>Blog</title>
 
-      <section className="min-w-[60%]">
+      <section className="max-w-[90%]">
         <div>
           <h1 className="text-center my-10 text-[2rem] font-bold"> {title} </h1>
           <div className="flex justify-center mb-4">
             <BlogHeader createdAt={createdAt} author={author} />
           </div>
-          <div className={`${detail.html} flex flex-col overflow-hidden`}>
+          <div className={`${detail.html} flex flex-col`}>
             {parse(bodyHTML)}
           </div>
         </div>

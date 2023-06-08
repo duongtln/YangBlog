@@ -14,7 +14,7 @@ const BlogReview: React.FC<BlogPost> = (props) => {
         {tags?.map((tag, inx) => {
           return (
             <p
-              className="bg-gradient-to-r from-indigo-500 to-purple-500 px-2 py-2 mt-2 font-normal text-sm rounded-lg text-white"
+              className="bg-blue-gradient px-2 mt-2 font-semibold rounded-xl text-zinc-800"
               key={inx}
             >
               {tag}

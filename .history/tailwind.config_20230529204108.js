@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      quicksand: ['quicksand'],
+      poppins: ['Poppins'],
     },
     extend: {},
   },
